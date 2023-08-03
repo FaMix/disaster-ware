@@ -5,7 +5,28 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Enviroment/Home.unity
+    guid: 3fc8acdd13e6c734bafef6554d6fdbcd
+  - enabled: 1
+    path: Assets/Scenes/Enviroment/Settings.unity
+    guid: 02b8c401d885df44e9a1009f04ef4803
+  - enabled: 1
+    path: Assets/Scenes/Enviroment/LeaderBoard.unity
+    guid: 9cf315c6cbe5d8e41b88ae313999174e
+  - enabled: 1
+    path: Assets/Scenes/Minigames/MinigameHub.unity
+    guid: eba051dc02b8202409b31202d18577ba
+  - enabled: 1
+    path: Assets/Scenes/Minigames/IceButton.unity
+    guid: 1c1d24d0a1278ed45b4125165ede1204
+  - enabled: 1
+    path: Assets/Scenes/Minigames/DonutEater.unity
+    guid: 7aef06db57c09794cb969010b667aa78
+  - enabled: 1
+    path: Assets/Scenes/Minigames/PressButton.unity
+    guid: d648e6080af1de743865b369c18ec3c1
   m_configObjects: {}
