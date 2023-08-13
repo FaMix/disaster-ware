@@ -32,10 +32,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 5119602914261710253}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.6798, y: 0.0024242}
-  m_SizeDelta: {x: 2598.8296, y: 4605.8}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 1.6798096, y: 0.5024414}
+  m_SizeDelta: {x: 1518.8296, y: 2682.7998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6994862691223676702
 CanvasRenderer:
@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -109,8 +109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -712}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -0.000061035156, y: -712}
+  m_SizeDelta: {x: 200, y: 52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7834846982815923509
 CanvasRenderer:
@@ -257,6 +257,7 @@ MonoBehaviour:
   sceneNames:
   - PressButton
   - IceButton
+  - NotPressButton
 --- !u!1 &4814921623627158244
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,10 +291,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 5119602914261710253}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -516}
-  m_SizeDelta: {x: 92, y: 117.015114}
+  m_SizeDelta: {x: -988, y: -1800.9849}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7217977010547687783
 CanvasRenderer:
@@ -345,7 +346,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 2ba8b3df237ba3a458bb4f3a43b6c53e, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
