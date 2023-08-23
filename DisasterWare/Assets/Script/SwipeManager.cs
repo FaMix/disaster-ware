@@ -52,8 +52,8 @@ public class SwipeManager : MonoBehaviour
                 
             if (ScoreManager.instance != null)
             {
-                ScoreManager.instance.CurrentScoreIcon.SetActive(true);
-                ScoreManager.instance.CurrentScoreGO.SetActive(true);
+                //ScoreManager.instance.CurrentScoreIcon.SetActive(true);
+                //ScoreManager.instance.CurrentScoreGO.SetActive(true);
                 Debug.Log("instance is not null");
                 ScoreManager.instance.AddPoints();
             }
@@ -67,6 +67,8 @@ public class SwipeManager : MonoBehaviour
         int randomIndex = Random.Range(0, sceneNames.Count);
         string sceneToLoad = sceneNames[randomIndex];
         SceneManager.LoadScene(sceneToLoad);
+        ScoreManager.instance.CurrentScoreIcon.SetActive(true);
+        ScoreManager.instance.CurrentScoreGO.SetActive(true);
     }
      
 }
