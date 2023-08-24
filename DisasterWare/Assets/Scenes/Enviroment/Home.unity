@@ -1199,7 +1199,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -41.681, y: -41.841}
+  m_AnchoredPosition: {x: -41.68103, y: -41.840942}
   m_SizeDelta: {x: 269, y: 270.0349}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1120768738
@@ -1528,7 +1528,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: BackgroundMusic
     clip: {fileID: 8300000, guid: eca93e84461b1d14e92b8b67289b0f05, type: 3}
-    volume: 0.352
+    volume: 0
     pitch: 1
     loop: 1
     source: {fileID: 0}

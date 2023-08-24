@@ -258,6 +258,7 @@ MonoBehaviour:
   - PressButton
   - IceButton
   - NotPressButton
+  - FallingBooks
 --- !u!1 &4814921623627158244
 GameObject:
   m_ObjectHideFlags: 0

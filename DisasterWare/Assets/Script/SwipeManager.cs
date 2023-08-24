@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class SwipeManager : MonoBehaviour
 {
@@ -64,11 +65,22 @@ public class SwipeManager : MonoBehaviour
 
     private void LoadRandomScene()
     {
-        int randomIndex = Random.Range(0, sceneNames.Count);
-        string sceneToLoad = sceneNames[randomIndex];
-        SceneManager.LoadScene(sceneToLoad);
-        ScoreManager.instance.CurrentScoreIcon.SetActive(true);
-        ScoreManager.instance.CurrentScoreGO.SetActive(true);
+        if (PlayerPrefs.GetInt("seenTutorial",0) == 0)
+        {
+            PlayerPrefs.SetInt("seenTutorial", 1);
+            SceneManager.LoadScene("Tutorial");
+            Debug.Log(ScoreManager.instance.Score);
+            ScoreManager.instance.Score--;
+            PlayerPrefs.SetInt("highscore", ScoreManager.instance.Score);
+        }
+        else
+        {
+            int randomIndex = Random.Range(0, sceneNames.Count);
+            string sceneToLoad = sceneNames[randomIndex];
+            SceneManager.LoadScene(sceneToLoad);
+            ScoreManager.instance.CurrentScoreIcon.SetActive(true);
+            ScoreManager.instance.CurrentScoreGO.SetActive(true);
+        }
     }
      
 }

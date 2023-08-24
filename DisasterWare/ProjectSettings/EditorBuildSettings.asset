@@ -29,4 +29,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minigames/NotPressButton.unity
     guid: b59d4ffdd160414479d9d87d0a52fdd5
+  - enabled: 1
+    path: Assets/Scenes/Minigames/FallingBooks.unity
+    guid: 80f80b2eec4a8bc4ca6eacd53276c442
+  - enabled: 1
+    path: Assets/Scenes/Enviroment/Tutorial.unity
+    guid: a0877df373e4b6c44880407235e53011
+  - enabled: 1
+    path: Assets/Scenes/Enviroment/Testing.unity
+    guid: 3b550978827b6a44fa854d6df4c6b2d6
   m_configObjects: {}
