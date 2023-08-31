@@ -8,14 +8,14 @@ public class TimeBar : MonoBehaviour
 {
     public GameObject gameOver;
     public Slider slider;
-    public float maxTime = 3f;
+    public float maxTime;
     float timeLeft;
     bool isGameOver = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        maxTime = 3f;
+        //maxTime = 3f;
         timeLeft = maxTime;
     }
 

@@ -280,6 +280,7 @@ GameObject:
   - component: {fileID: 5897912676745589237}
   - component: {fileID: 2529236891227611672}
   - component: {fileID: 4735481219040526568}
+  - component: {fileID: 2078850777737452189}
   m_Layer: 5
   m_Name: FinalPoints
   m_TagString: Untagged
@@ -359,6 +360,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalScoreText: {fileID: 3894926935532584224}
   currentScore: {fileID: 0}
+--- !u!114 &2078850777737452189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3894926935532584224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 235a007d1f10eb34f9d8a10353d69660, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emailInput: {fileID: 0}
+  passwordInput: {fileID: 0}
+  nameInput: {fileID: 0}
+  errorTextLoginBox: {fileID: 0}
+  errorTextUserBox: {fileID: 0}
+  loginBox: {fileID: 0}
+  usernameBox: {fileID: 0}
+  rowPrefab: {fileID: 0}
+  rowsParent: {fileID: 0}
+  loggedInUsername: 
 --- !u!1 &4282830485001649232
 GameObject:
   m_ObjectHideFlags: 0

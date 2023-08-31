@@ -24,6 +24,8 @@ public class PlayFabManager : MonoBehaviour
     public Transform rowsParent;
     public string loggedInUsername;
 
+    public GameObject loginSuccesful, registerSuccesful;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,6 +57,10 @@ public class PlayFabManager : MonoBehaviour
 
     private void OnRegisterSuccess(RegisterPlayFabUserResult result)
     {
+        this.loggedInUsername = result.Username;
+        this.loginBox.SetActive(false);
+        this.usernameBox.SetActive(false);
+        this.registerSuccesful.SetActive(true);
         Debug.Log("Registrato e loggato con successo");
     }
 
@@ -71,6 +77,7 @@ public class PlayFabManager : MonoBehaviour
             Email = emailInput.text,
             Password = passwordInput.text,
             DisplayName = nameInput.text,
+            Username = nameInput.text,
             RequireBothUsernameAndEmail = true
         };
         PlayFabClientAPI.RegisterPlayFabUser(request, OnRegisterSuccess, OnError);
@@ -105,7 +112,20 @@ public class PlayFabManager : MonoBehaviour
     void OnSuccess(LoginResult result)
     {
         Debug.Log("Login riuscito/Account creato");
-        this.loggedInUsername = result.PlayFabId;
+        var request = new GetPlayerProfileRequest
+        {
+            PlayFabId = result.PlayFabId,
+        };
+        PlayFabClientAPI.GetPlayerProfile(request, SetCurrentUsername, OnError);
+
+        this.loginBox.SetActive(false);
+        this.loginSuccesful.SetActive(true);
+    }
+
+    private void SetCurrentUsername(GetPlayerProfileResult result)
+    {
+        this.loggedInUsername = result.PlayerProfile.DisplayName;
+        Debug.Log(this.loggedInUsername);    
     }
 
     void OnError(PlayFabError error)
@@ -196,11 +216,11 @@ public class PlayFabManager : MonoBehaviour
             texts[1].text = item.DisplayName;
             texts[2].text = item.StatValue.ToString();
 
-            if (item.PlayFabId == loggedInUsername)
+            if (string.Compare(item.DisplayName, this.loggedInUsername) == 0)
             {
-                texts[0].color = Color.cyan;
-                texts[1].color = Color.cyan;
-                texts[2].color = Color.cyan;
+                texts[0].color = UnityEngine.Color.cyan;
+                texts[1].color = UnityEngine.Color.cyan;
+                texts[2].color = UnityEngine.Color.cyan;
             }
         }
     }

@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Enviroment/Home.unity
+    path: Assets/Scenes/Environment/Home.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
   - enabled: 1
-    path: Assets/Scenes/Enviroment/Settings.unity
+    path: Assets/Scenes/Environment/Settings.unity
     guid: 02b8c401d885df44e9a1009f04ef4803
   - enabled: 1
-    path: Assets/Scenes/Enviroment/LeaderBoard.unity
+    path: Assets/Scenes/Environment/LeaderBoard.unity
     guid: 9cf315c6cbe5d8e41b88ae313999174e
   - enabled: 1
     path: Assets/Scenes/Minigames/MinigameHub.unity
@@ -33,9 +33,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Minigames/FallingBooks.unity
     guid: 80f80b2eec4a8bc4ca6eacd53276c442
   - enabled: 1
-    path: Assets/Scenes/Enviroment/Tutorial.unity
+    path: Assets/Scenes/Environment/Tutorial.unity
     guid: a0877df373e4b6c44880407235e53011
   - enabled: 1
-    path: Assets/Scenes/Enviroment/Testing.unity
+    path: Assets/Scenes/Environment/Testing.unity
     guid: 3b550978827b6a44fa854d6df4c6b2d6
   m_configObjects: {}
