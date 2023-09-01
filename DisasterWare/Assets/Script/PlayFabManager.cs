@@ -8,8 +8,8 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SocialPlatforms.Impl;
 using System.Threading;
-using UnityEditor.UIElements;
-using UnityEditor.PackageManager;
+//using UnityEditor.UIElements;
+//using UnityEditor.PackageManager;
 
 public class PlayFabManager : MonoBehaviour
 {
