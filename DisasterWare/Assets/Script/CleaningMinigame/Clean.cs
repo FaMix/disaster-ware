@@ -39,16 +39,16 @@ public class Clean : MonoBehaviour
             }
         }
         dirtAmount = dirtAmountTotal;
-        Debug.Log(dirtAmount + " " + dirtAmountTotal);
-        InvokeRepeating("DirtPercent", 0.5f, 3);
+        //InvokeRepeating("DirtPercent", 0.5f, 3);
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(GetDirtAmount());
+
         if (Input.GetMouseButton(0))
         {
-            Debug.Log("toccato lo schermo");
             if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition),out RaycastHit hit))
             {
                 Vector2 textureCoord = hit.textureCoord;
@@ -56,7 +56,7 @@ public class Clean : MonoBehaviour
                 int pixelX = (int)(textureCoord.x * _templateDirtMask.width);
                 int pixelY = (int)(textureCoord.y * _templateDirtMask.height);
 
-                for (int i = 0; i < this._brush.width; i++)
+                for (int i = 0; i < this._brush.width*4.0; i++)
                 {
                     for (int j = 0; j < this._brush.height; j++)
                     {
@@ -76,14 +76,13 @@ public class Clean : MonoBehaviour
         }
     }
 
-    private float GetDirtAmount()
+    public float GetDirtAmount()
     {
         return this.dirtAmount / dirtAmountTotal;
     }
 
     private void DirtPercent()
     {
-        Debug.Log(GetDirtAmount());
         uiText.text = Mathf.RoundToInt(GetDirtAmount() * 100f) + "%";
     }
 }

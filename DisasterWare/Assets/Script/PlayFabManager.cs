@@ -208,16 +208,17 @@ public class PlayFabManager : MonoBehaviour
 
         foreach (var item in result.Leaderboard)
         {
-            Debug.Log(item.Position + " " + item.PlayFabId + " " + item.StatValue);
+            Debug.Log(item.Position + " " + item.DisplayName + " " + item.StatValue);
             GameObject newGo = Instantiate(rowPrefab, rowsParent);
             TMP_Text[] texts = newGo.GetComponentsInChildren<TMP_Text>();
             Debug.Log(texts);
             texts[0].text = (item.Position + 1).ToString();
             texts[1].text = item.DisplayName;
             texts[2].text = item.StatValue.ToString();
-
+            Debug.Log(this.loggedInUsername);
             if (string.Compare(item.DisplayName, this.loggedInUsername) == 0)
             {
+                Debug.Log("sono uguali");
                 texts[0].color = UnityEngine.Color.cyan;
                 texts[1].color = UnityEngine.Color.cyan;
                 texts[2].color = UnityEngine.Color.cyan;

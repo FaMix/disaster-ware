@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Minigames/NotPressButton.unity
     guid: b59d4ffdd160414479d9d87d0a52fdd5
   - enabled: 1
-    path: Assets/Scenes/Minigames/FallingBooks.unity
+    path: Assets/Scenes/Minigames/FallingAnvils.unity
     guid: 80f80b2eec4a8bc4ca6eacd53276c442
   - enabled: 1
     path: Assets/Scenes/Environment/Tutorial.unity
@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minigames/Wires.unity
     guid: cb424c36c5bf2ed46adeff47c6418e57
+  - enabled: 1
+    path: Assets/Scenes/Minigames/DirtyScreen.unity
+    guid: a6787d00878097844ac41fde63402664
   m_configObjects: {}

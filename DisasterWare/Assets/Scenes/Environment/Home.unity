@@ -2065,7 +2065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8150896060898776960, guid: f6456ef85e6305a45a47a23f400761b1, type: 3}
       propertyPath: m_Name
-      value: Coins
+      value: Score
       objectReference: {fileID: 0}
     - target: {fileID: 8849015730461559133, guid: f6456ef85e6305a45a47a23f400761b1, type: 3}
       propertyPath: m_Pivot.x
