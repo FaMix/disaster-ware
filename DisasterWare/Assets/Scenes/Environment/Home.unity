@@ -1033,6 +1033,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 781388471412361322, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1992414223873488648, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3199919505520279593, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
       propertyPath: m_Name
       value: SwipeScene
