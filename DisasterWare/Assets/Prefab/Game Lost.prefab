@@ -382,6 +382,8 @@ MonoBehaviour:
   rowPrefab: {fileID: 0}
   rowsParent: {fileID: 0}
   loggedInUsername: 
+  loginSuccesful: {fileID: 0}
+  registerSuccesful: {fileID: 0}
 --- !u!1 &4282830485001649232
 GameObject:
   m_ObjectHideFlags: 0
