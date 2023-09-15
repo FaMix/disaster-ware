@@ -9,7 +9,9 @@ public class Player : MonoBehaviour
     public float moveSpeed;
     Rigidbody2D rb;
     public GameObject gameLost;
+    public GameObject explotion; 
     public GameObject gameManager;
+    public GameObject sliderTimer;
     public Slider slider;
 
     // Start is called before the first frame update
@@ -50,8 +52,10 @@ public class Player : MonoBehaviour
     {
         if(collision.gameObject.tag == "Block" && slider.value != 0)
         {
-            slider.GetComponent<TimeBar>().enabled = false;
-            gameLost.SetActive(true);
+            sliderTimer.GetComponent<TimeBar>().enabled = false;
+            gameLost.GetComponent<WaitSeconds>().enabled = true;
+            explotion.SetActive(true);
+            gameLost.GetComponent<SpriteRenderer>().enabled = false;
             this.endGame();
             
         }

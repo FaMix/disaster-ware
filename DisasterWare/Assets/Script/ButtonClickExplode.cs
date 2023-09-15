@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ButtonClickExplode : MonoBehaviour
-{ 
+{
 
-    public void OnButtonClick()
-    {
+    void Start() {
         FindObjectOfType<SoundManager>().Play("ButtonExplode");
     }
+    
 }
 
 

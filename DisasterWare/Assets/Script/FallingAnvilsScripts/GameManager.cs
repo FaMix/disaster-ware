@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject block;
+    public GameObject block; 
     public float maxX;
     public RectTransform spawnPoint;
     public float spawnRate;

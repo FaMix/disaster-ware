@@ -56,7 +56,7 @@ public class WireManager : MonoBehaviour
         }
         if (this.allConnected == true && slider.value != 0)
         {
-            slider.GetComponent<TimeBar>().enabled = false;
+            slider.GetComponent<TimeBarExp>().enabled = false;
             foreach (PoweredWireStats wire in wires)
             {
                 wire.GetComponent<PoweredWireBehavior>().enabled = false;
