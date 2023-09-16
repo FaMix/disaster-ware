@@ -24,9 +24,9 @@ public class CleanManager : MonoBehaviour
 
     void endGame()
     {
-        if (slider.value != 0f && cleanPercent<=0.58)
+        if (slider.value != 0f && cleanPercent<=0.85)
         {
-            slider.GetComponent<TimeBar>().enabled = false;
+            slider.GetComponent<TimeBarExp>().enabled = false;
             swipeScene.SetActive(true);
             gameObject.GetComponentInChildren<Clean>().enabled = false;
             this.enabled = false;

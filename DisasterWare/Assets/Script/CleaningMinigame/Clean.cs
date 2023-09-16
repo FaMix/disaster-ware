@@ -58,7 +58,7 @@ public class Clean : MonoBehaviour
 
                 for (int i = 0; i < this._brush.width*4.0; i++)
                 {
-                    for (int j = 0; j < this._brush.height; j++)
+                    for (int j = 0; j < this._brush.height*2.0; j++)
                     {
                         UnityEngine.Color pixelDirt = this._brush.GetPixel(i, j);
                         UnityEngine.Color pixelDirtMask = this._templateDirtMask.GetPixel(pixelX+i, pixelY+j);
