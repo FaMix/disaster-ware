@@ -469,6 +469,7 @@ GameObject:
   - component: {fileID: 363514341}
   - component: {fileID: 363514343}
   - component: {fileID: 363514342}
+  - component: {fileID: 363514344}
   m_Layer: 5
   m_Name: Cloud
   m_TagString: Untagged
@@ -492,7 +493,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 202, y: 1619}
+  m_AnchoredPosition: {x: 202, y: 2768}
   m_SizeDelta: {x: 327, y: 163}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &363514342
@@ -533,6 +534,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 363514340}
   m_CullTransparentMesh: 1
+--- !u!95 &363514344
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363514340}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7f5e3c3e25b4ec64ab31b873f79d85af, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &523104810
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,6 +740,7 @@ GameObject:
   - component: {fileID: 651650249}
   - component: {fileID: 651650250}
   - component: {fileID: 651650251}
+  - component: {fileID: 651650252}
   m_Layer: 5
   m_Name: Bird
   m_TagString: Bird
@@ -840,7 +863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocita: 350
-  limiteDestro: 1100
+  limiteDestro: 1050
   limiteSinistro: 150
   mediumSize: {fileID: 1412814266, guid: 22ebbae9da233c843ad7d980714fb8e0, type: 3}
   fatSize: {fileID: -172172217, guid: ebc2e476663e39442bc1cc4b7802fd10, type: 3}
@@ -848,6 +871,7 @@ MonoBehaviour:
   swipeUp: {fileID: 1940210659}
   slider: {fileID: 1558554210}
   explosion: {fileID: 1056834404}
+  animator: {fileID: 651650252}
 --- !u!50 &651650251
 Rigidbody2D:
   serializedVersion: 4
@@ -875,6 +899,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &651650252
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651650245}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bb0b0eeb1a513454592205c8830aed95, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &757965836
 GameObject:
   m_ObjectHideFlags: 0
@@ -1587,6 +1632,7 @@ GameObject:
   - component: {fileID: 1248627460}
   - component: {fileID: 1248627462}
   - component: {fileID: 1248627461}
+  - component: {fileID: 1248627463}
   m_Layer: 5
   m_Name: Cloud3
   m_TagString: Untagged
@@ -1651,6 +1697,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248627459}
   m_CullTransparentMesh: 1
+--- !u!95 &1248627463
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248627459}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 716a7eb61be86a349a17c3328cf129bc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1301524805
 GameObject:
   m_ObjectHideFlags: 0
@@ -1754,6 +1821,7 @@ GameObject:
   - component: {fileID: 1375711385}
   - component: {fileID: 1375711387}
   - component: {fileID: 1375711386}
+  - component: {fileID: 1375711388}
   m_Layer: 5
   m_Name: Cloud5
   m_TagString: Untagged
@@ -1777,7 +1845,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1023, y: 855}
+  m_AnchoredPosition: {x: 815, y: 855}
   m_SizeDelta: {x: 478, y: 269}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1375711386
@@ -1818,6 +1886,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1375711384}
   m_CullTransparentMesh: 1
+--- !u!95 &1375711388
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375711384}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5bbdb430df73e0a4dbd5fc2ccbc444b0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1453622222
 GameObject:
   m_ObjectHideFlags: 0
@@ -1904,6 +1993,7 @@ GameObject:
   - component: {fileID: 1467578721}
   - component: {fileID: 1467578723}
   - component: {fileID: 1467578722}
+  - component: {fileID: 1467578724}
   m_Layer: 5
   m_Name: Cloud4
   m_TagString: Untagged
@@ -1968,6 +2058,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1467578720}
   m_CullTransparentMesh: 1
+--- !u!95 &1467578724
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467578720}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 29921d22fc1547c41806e6c724a0718f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1558554208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2950,6 +3061,7 @@ GameObject:
   - component: {fileID: 2040296797}
   - component: {fileID: 2040296799}
   - component: {fileID: 2040296798}
+  - component: {fileID: 2040296800}
   m_Layer: 5
   m_Name: Cloud2
   m_TagString: Untagged
@@ -3014,6 +3126,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040296796}
   m_CullTransparentMesh: 1
+--- !u!95 &2040296800
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040296796}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 96428ebb751855a4e809b43cd38707a3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

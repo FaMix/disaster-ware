@@ -16,6 +16,7 @@ public class BirdMovement : MonoBehaviour
     public GameObject swipeUp;
     public GameObject slider;
     public GameObject explosion;
+    public Animator animator;
 
     void Update()
     {
@@ -54,10 +55,12 @@ public class BirdMovement : MonoBehaviour
             if (hasEaten == 1)
             {
                 birdImage.sprite = mediumSize;
+                animator.SetBool("isMedium", true);
             }
             else if(hasEaten == 2)
             {
                 birdImage.sprite = fatSize;
+                animator.SetBool("isFat", true);
             }
             else if (hasEaten == 3)
             {
