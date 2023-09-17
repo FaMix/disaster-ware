@@ -292,6 +292,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.data[2]
+      value: DirtyScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.data[3]
+      value: NotPressButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.data[4]
+      value: Wires
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.data[5]
+      value: DonutEater
+      objectReference: {fileID: 0}
     - target: {fileID: 7199694764520400942, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1289,6 +1309,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3738030647984557366, guid: e209c6a3a98c3aa4789a211aca7cddd3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8979085799687666917, guid: e209c6a3a98c3aa4789a211aca7cddd3, type: 3}
       propertyPath: m_Name
       value: GameLostPrefab
@@ -1755,7 +1779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7865deb902c27394fb17593cc78c23f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaitForGameOver: {fileID: 0}
+  WaitForGameOver: {fileID: 699342188}
 --- !u!114 &969210251 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5728678204770325003, guid: d56993304726c384a85021904e0354d5, type: 3}

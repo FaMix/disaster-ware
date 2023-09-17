@@ -425,11 +425,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4864052310939183133, guid: d56993304726c384a85021904e0354d5, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4864052310939183133, guid: d56993304726c384a85021904e0354d5, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4864052310939183133, guid: d56993304726c384a85021904e0354d5, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -533,7 +533,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7764011259129898302, guid: d56993304726c384a85021904e0354d5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -892,6 +892,22 @@ PrefabInstance:
     - target: {fileID: 5119602914261710253, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.data[3]
+      value: NotPressButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.data[4]
+      value: Wires
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.data[5]
+      value: DonutEater
       objectReference: {fileID: 0}
     - target: {fileID: 6697812581467901415, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
       propertyPath: m_Enabled
@@ -1375,6 +1391,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1558608689}
+  - component: {fileID: 1558608690}
   m_Layer: 0
   m_Name: Explosion
   m_TagString: Untagged
@@ -1398,6 +1415,18 @@ Transform:
   - {fileID: 1490058025}
   m_Father: {fileID: 2012908042}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1558608690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558608688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ca21c709ddc3f84d835e0d50bc9af91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1606119723
 GameObject:
   m_ObjectHideFlags: 0

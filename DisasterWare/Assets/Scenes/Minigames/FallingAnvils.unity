@@ -761,6 +761,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.data[1]
+      value: IceButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.data[2]
+      value: DirtyScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.data[3]
+      value: NotPressButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.data[4]
+      value: Wires
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.data[5]
+      value: DonutEater
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2562,7 +2586,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.043892, y: 145.79999}
+  m_AnchoredPosition: {x: 0.043892, y: 145.80005}
   m_SizeDelta: {x: 3.59, y: 3.0499878}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!61 &2087231327

@@ -259,6 +259,34 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -39
       objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.data[0]
+      value: FallingAnvils
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.data[1]
+      value: IceButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.data[2]
+      value: DirtyScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.data[3]
+      value: NotPressButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.data[4]
+      value: Wires
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.data[5]
+      value: DonutEater
+      objectReference: {fileID: 0}
     - target: {fileID: 6697812581467901415, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -627,6 +655,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 430598176}
+  - component: {fileID: 430598177}
   m_Layer: 0
   m_Name: Explosion
   m_TagString: Untagged
@@ -650,6 +679,18 @@ Transform:
   - {fileID: 1981602813}
   m_Father: {fileID: 857723677}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &430598177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430598175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ca21c709ddc3f84d835e0d50bc9af91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &445846532 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3936280556347706316, guid: d56993304726c384a85021904e0354d5, type: 3}

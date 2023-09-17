@@ -2646,11 +2646,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
       propertyPath: sceneNames.Array.size
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
       propertyPath: sceneNames.Array.data[2]
+      value: Wires
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.data[3]
       value: NotPressButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.data[4]
+      value: IceButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651824109399533017, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
+      propertyPath: sceneNames.Array.data[5]
+      value: DirtyScreen
       objectReference: {fileID: 0}
     - target: {fileID: 8094483665735725651, guid: 6d85f414aec14904f8e8297999085e82, type: 3}
       propertyPath: m_Type

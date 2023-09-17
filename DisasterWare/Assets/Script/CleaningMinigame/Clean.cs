@@ -13,6 +13,8 @@ public class Clean : MonoBehaviour
 
     private float dirtAmountTotal;
     private float dirtAmount;
+    private int bigBrushX = 0;
+    private int bigBrushY = -20;
 
     private Texture2D _templateDirtMask;
 
@@ -28,6 +30,7 @@ public class Clean : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         this.CreateTexture();
 
         dirtAmountTotal = 0f;
@@ -45,7 +48,7 @@ public class Clean : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(GetDirtAmount());
+        //Debug.Log(GetDirtAmount());
 
         if (Input.GetMouseButton(0))
         {
@@ -56,9 +59,9 @@ public class Clean : MonoBehaviour
                 int pixelX = (int)(textureCoord.x * _templateDirtMask.width);
                 int pixelY = (int)(textureCoord.y * _templateDirtMask.height);
 
-                for (int i = 0; i < this._brush.width*4.0; i++)
+                for (int i = 0; i < this._brush.width; i++)
                 {
-                    for (int j = 0; j < this._brush.height*2.0; j++)
+                    for (int j = 0; j < this._brush.height; j++)
                     {
                         UnityEngine.Color pixelDirt = this._brush.GetPixel(i, j);
                         UnityEngine.Color pixelDirtMask = this._templateDirtMask.GetPixel(pixelX+i, pixelY+j);
