@@ -1882,7 +1882,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &871541083
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1926,12 +1926,15 @@ MonoBehaviour:
 
     Misino Ortega Fabio
 
-
     Assets:
 
     2DBirds_Pack3,
     2D Casual UI, 2D Casual background HD V.4, Frost
 
+    Music:
+
+    Spider Dance
+    cover by Vetrom
 
     Icon Artist:
 

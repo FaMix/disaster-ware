@@ -1610,8 +1610,8 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: BackgroundMusic
-    clip: {fileID: 8300000, guid: eca93e84461b1d14e92b8b67289b0f05, type: 3}
-    volume: 15.6
+    clip: {fileID: 8300000, guid: d5d1fa62170af254f995f02ebcc9a93a, type: 3}
+    volume: 12
     pitch: 1
     loop: 1
     source: {fileID: 0}
