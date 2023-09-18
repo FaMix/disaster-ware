@@ -31,10 +31,8 @@ public class SoundSettings : MonoBehaviour
         for (int index = 0; index < soundManager.sounds.Length; index++)
         {
             //soundManager.sounds[index].volume = Mathf.Log10(_value / 100) * 20f;
-            if (soundManager.sounds[index].name != "ButtonExplode")
-            { 
+            
             soundManager.sounds[index].volume = Mathf.Log10(_value) * 10f;
-            }
         }
     }
 

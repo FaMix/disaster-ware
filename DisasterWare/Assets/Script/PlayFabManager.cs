@@ -21,6 +21,7 @@ public class PlayFabManager : MonoBehaviour
     public GameObject loginBox;
     public GameObject usernameBox;
     public GameObject rowPrefab;
+    public GameObject blackBackground;
     public Transform rowsParent;
     public string loggedInUsername;
 
@@ -51,6 +52,7 @@ public class PlayFabManager : MonoBehaviour
     public void RegisterButton()
     {
         this.loginBox.SetActive(false);
+        this.blackBackground.SetActive(false);
         this.usernameBox.SetActive(true);
 
     }
@@ -59,6 +61,7 @@ public class PlayFabManager : MonoBehaviour
     {
         this.loggedInUsername = result.Username;
         this.loginBox.SetActive(false);
+        this.blackBackground.SetActive(false);
         this.usernameBox.SetActive(false);
         this.registerSuccesful.SetActive(true);
         Debug.Log("Registrato e loggato con successo");
@@ -119,6 +122,7 @@ public class PlayFabManager : MonoBehaviour
         PlayFabClientAPI.GetPlayerProfile(request, SetCurrentUsername, OnError);
 
         this.loginBox.SetActive(false);
+        this.blackBackground.SetActive(false);
         this.loginSuccesful.SetActive(true);
     }
 

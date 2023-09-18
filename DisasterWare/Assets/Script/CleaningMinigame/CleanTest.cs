@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class Clean : MonoBehaviour
+public class CleanTest : MonoBehaviour
 {
     [SerializeField] private Camera _camera;
     [SerializeField] private Texture2D _dirtMaskBase;
@@ -50,31 +50,44 @@ public class Clean : MonoBehaviour
 
         if (Input.GetMouseButton(0))
         {
-            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition),out RaycastHit hit))
+            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out RaycastHit hit))
             {
                 Vector2 textureCoord = hit.textureCoord;
 
                 int pixelX = (int)(textureCoord.x * _templateDirtMask.width);
                 int pixelY = (int)(textureCoord.y * _templateDirtMask.height);
 
-                for (int i = 0; i < this._brush.width; i++)
-                {
-                    for (int j = 0; j < this._brush.height; j++)
-                    {
-                        UnityEngine.Color pixelDirt = this._brush.GetPixel(i, j);
-                        UnityEngine.Color pixelDirtMask = this._templateDirtMask.GetPixel(pixelX+i, pixelY+j);
+                int brushWidth = _brush.width;
+                int brushHeight = _brush.height;
 
-                        float removedAmount = pixelDirtMask.g - (pixelDirtMask.g * pixelDirt.g);
-                        dirtAmount -= removedAmount;
-                        
-                        this._templateDirtMask.SetPixel(pixelX + i, pixelY + j,
-                            new UnityEngine.Color(0, pixelDirtMask.g * pixelDirt.g, 0));
+                int startX = pixelX - brushWidth / 2;
+                int startY = pixelY - brushHeight / 2;
+
+                for (int i = 0; i < brushWidth; i++)
+                {
+                    for (int j = 0; j < brushHeight; j++)
+                    {
+                        int targetX = startX + i;
+                        int targetY = startY + j;
+
+                        if (targetX >= 0 && targetX < _templateDirtMask.width && targetY >= 0 && targetY < _templateDirtMask.height)
+                        {
+                            UnityEngine.Color pixelDirt = _brush.GetPixel(i, j);
+                            UnityEngine.Color pixelDirtMask = _templateDirtMask.GetPixel(targetX, targetY);
+
+                            float removedAmount = pixelDirtMask.g - (pixelDirtMask.g * pixelDirt.g);
+                            dirtAmount -= removedAmount;
+
+                            _templateDirtMask.SetPixel(targetX, targetY,
+                                new UnityEngine.Color(0, pixelDirtMask.g * pixelDirt.g, 0));
+                        }
                     }
                 }
 
-                this._templateDirtMask.Apply();
+                _templateDirtMask.Apply();
             }
         }
+
     }
 
     public float GetDirtAmount()

@@ -1681,7 +1681,7 @@ MonoBehaviour:
   sounds:
   - name: ButtonPress
     clip: {fileID: 8300000, guid: 170dedf21b9565349872a795784cf42f, type: 3}
-    volume: 0.281
+    volume: 20.1
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -1691,15 +1691,9 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
-  - name: ButtonExplode
-    clip: {fileID: 8300000, guid: 0f5edd501e7a1b2498f87d077847e2d6, type: 3}
-    volume: 0.281
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
   - name: ButtonBack
     clip: {fileID: 8300000, guid: 1071871be4e767b42b5a2da1db2db847, type: 3}
-    volume: 0.281
+    volume: 28.3
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -1754,7 +1748,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -13.93}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -50}
+  m_AnchoredPosition: {x: -14, y: -58}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1854719847
@@ -2250,6 +2244,34 @@ PrefabInstance:
     - target: {fileID: 761505942129847101, guid: f6456ef85e6305a45a47a23f400761b1, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 2.7516
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674738537125390128, guid: f6456ef85e6305a45a47a23f400761b1, type: 3}
+      propertyPath: m_text
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674738537125390128, guid: f6456ef85e6305a45a47a23f400761b1, type: 3}
+      propertyPath: m_fontSize
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674738537125390128, guid: f6456ef85e6305a45a47a23f400761b1, type: 3}
+      propertyPath: m_margin.w
+      value: 45.33557
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674738537125390128, guid: f6456ef85e6305a45a47a23f400761b1, type: 3}
+      propertyPath: m_margin.x
+      value: -34.42395
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674738537125390128, guid: f6456ef85e6305a45a47a23f400761b1, type: 3}
+      propertyPath: m_margin.y
+      value: 27.028183
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674738537125390128, guid: f6456ef85e6305a45a47a23f400761b1, type: 3}
+      propertyPath: m_margin.z
+      value: 274.413
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674738537125390128, guid: f6456ef85e6305a45a47a23f400761b1, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8150896060898776960, guid: f6456ef85e6305a45a47a23f400761b1, type: 3}
       propertyPath: m_Name
