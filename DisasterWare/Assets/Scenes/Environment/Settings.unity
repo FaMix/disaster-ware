@@ -343,7 +343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 714500887956277752, guid: 3f1cf7c50663cec49bc3421c30f13453, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 889740898871669132, guid: 3f1cf7c50663cec49bc3421c30f13453, type: 3}
       propertyPath: m_LocalPosition.x
@@ -387,11 +387,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2044541623287141663, guid: 3f1cf7c50663cec49bc3421c30f13453, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5806684904762369447, guid: 3f1cf7c50663cec49bc3421c30f13453, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7540079364705643603, guid: 3f1cf7c50663cec49bc3421c30f13453, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 256173086}
+    - target: {fileID: 7540079364705643603, guid: 3f1cf7c50663cec49bc3421c30f13453, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -403,9 +411,9 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5806684904762369447, guid: 3f1cf7c50663cec49bc3421c30f13453, type: 3}
   m_PrefabInstance: {fileID: 256173084}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &258417783 stripped
+--- !u!1 &256173086 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 2044541623287141663, guid: 3f1cf7c50663cec49bc3421c30f13453, type: 3}
+  m_CorrespondingSourceObject: {fileID: 714500887956277752, guid: 3f1cf7c50663cec49bc3421c30f13453, type: 3}
   m_PrefabInstance: {fileID: 256173084}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &279209174
@@ -3255,7 +3263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b9269f3ca35cb245b9a7e9b816c5515, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toSet: {fileID: 258417783}
+  toSet: {fileID: 256173086}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

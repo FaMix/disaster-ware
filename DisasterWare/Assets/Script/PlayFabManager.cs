@@ -37,6 +37,21 @@ public class PlayFabManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (loginSuccesful != null) 
+        {
+            if (loginSuccesful.GetComponent<Image>().color.a == 0)
+            {
+                loginSuccesful.SetActive(false);
+            }
+        }
+
+        if (registerSuccesful != null)
+        {
+            if (registerSuccesful.GetComponent<Image>().color.a == 0)
+            {
+                registerSuccesful.SetActive(false);
+            }
+        }
     }
 
     public void LoginButton()
